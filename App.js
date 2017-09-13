@@ -17,6 +17,7 @@ mongoose.connect("mongodb://localhost:27017/MERN"); //connection to mongodb
         console.error('App starting error:', err.stack);
         process.exit(1);
     });
+    //middlewares come here
 // Use middlewares to set view engine and post json data to the server
 app.use(express.static('public'));
 app.use(cors());
